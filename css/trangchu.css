@@ -1,0 +1,176 @@
+.companyMenu {
+	margin: 10px 0 30px; 
+	border: rgb(253, 253, 253) 1px solid;
+	background-color: #fff;
+}
+
+.companyMenu a {
+	z-index: 999;
+    border: 2px solid rgb(255, 255, 255);
+    height: 40px;
+    line-height: 40px;
+    transition-duration: .2s;
+}
+
+.companyMenu a:hover {
+	transform: scale(1.1);
+	z-index: 20;
+}
+
+.companyMenu a img{
+    max-height: 30px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+/* Dropdown From w3 */
+	.dropbtn {
+	    background-color: white;
+	    color: black;
+	    padding: 10px 14px;
+	    font-size: 15px;
+	    border: #000 solid 1px;
+	    border-radius: 5px;
+	    cursor: pointer;
+		margin-bottom: 5px;
+		transition-duration: .3s;
+		
+	}
+	
+
+	
+	
+
+	.dropdown {
+	    position: relative;
+	    margin: 10px 5px;
+	}
+
+	
+
+	.dropdown-content {
+	    z-index: 1;
+	    position: absolute;
+	    min-width: 170px;
+	    border-radius: 5px;
+	    background-color: rgba(255, 255, 255, .8);
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	    transform: rotateX(90deg);
+	    transition-duration: .3s;
+	}
+
+	
+
+	.dropdown-content a {
+	    color: #444;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.dropdown-content a:hover { 
+		background-color: white;
+		color: black;
+		font-weight: bold;
+	}
+	
+	.dropdown:hover .dropdown-content {
+	    /* khi hover vào thì cần hiện content ra => xoay 0 độ => trờ về như cũ */
+	    transform: rotateY(0deg);
+	}
+
+
+
+	.dropdown:hover .dropbtn {
+	    background-color: white;
+		color: black;
+		font-weight: bold;
+	}
+/* ============== End From W3 ============== */
+
+/* Filter by Name */
+.filterName {
+	margin: 15px auto;
+	text-align: center;
+	/* width: 195px; */
+}
+.filterName input {
+	padding: 0 15px;
+	/* width: calc(100% - 30px); 15px la padding left cua input */
+	height: 30px;
+	border: 2px solid #bbb;
+	border-radius: 10px;
+	font-size: 15px;
+	-webkit-transition-duration: .3s;
+     -o-transition-duration: .3s;
+        transition-duration: .3s;
+}
+.filterName input:focus {
+	border: 2px solid orange;
+} 
+
+/* Choosed filter */
+.choosedFilter { margin: 10px auto; }
+.choosedFilter i { transition-duration: .3s; }
+.choosedFilter a:hover > h3 > i { color: red; }
+/* .choosedFilter a:hover > h3 { text-decoration: line-through; } */
+.choosedFilter a {
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+    background: black;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* Các khung sản phẩm */
+
+
+.khungSanPham {
+	width: 100%;
+	margin: 50px 0;
+	border-radius: 5px;
+	border: 2px solid #ff4d00; 
+	box-sizing: border-box; /* dùng để width ko vượt ra ngoài khi có border */
+	background: rgb(247, 239, 239);
+}
+
+.khungSanPham h3.tenKhung {
+	
+	line-height: 1.5em;
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 30px;
+	color: white;
+	transform: translateY(-0.75em);
+	padding-left: 20px;
+	width: 35%;
+    
+}
+
+.khungSanPham li {
+	background: white;
+	list-style-type: none; 
+	
+}
+
+/* Nút xem tất cả */
+.xemTatCa {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	/* max-width: 25%; */
+	margin:	0 auto;
+	margin-right: 30px;
+	padding: .5em 1em;
+	color: white;
+	background-color: black;
+	transition-duration: .2s;
+	transform: translateY(1em);
+	width: 10%;
+	
+}
+.xemTatCa:hover {
+	background-color: black;
+	color: white;
+	padding: .7em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/icon.ico" />
+
+    <!-- Load font awesome icons -->
+    <script src="https://kit.fontawesome.com/1d4366ccab.js" crossorigin="anonymous"></script>
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://zingnews.vn/apple-thua-nhan-van-de-cua-iphone-14-post1372665.html" target="_blank">
+                    <img src="img/tintuc/iphone_14_zing_3.jpg">
+                    <h2>Apple thừa nhận vấn đề của iPhone 14</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://zingnews.vn/xuat-hien-iphone-gap-dau-tien-tren-the-gioi-post1373519.html" target="_blank">
+                    <img src="img/tintuc/ipHONE_GAPAJ.jpg">
+                    <h2>iPhone gập đầu tiên trên thế giới</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://thanhnien.vn/canh-bao-loi-nghiem-trong-tren-dien-thoai-android-post1523984.html" target="_blank">
+                    <img src="img/tintuc/7-8997.jpg">
+                    <h2>Cảnh báo lỗi nghiêm trọng trên điện thoại Android </h2>
+                </a>
+                <br/>
+                <h5>thanhnien &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://thanhnien.vn/meo-giup-tang-hieu-suat-dien-thoai-android-post1516309.html" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>Mẹo giúp tăng hiệu suất điện thoại Android</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://news.zing.vn/nhung-tieu-chi-ban-khong-nen-bo-qua-khi-mua-smartphone-2018-post894509.html" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>Những tiêu chí bạn không nên bỏ qua khi mua smartphone 2018</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

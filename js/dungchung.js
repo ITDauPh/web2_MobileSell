@@ -17,7 +17,7 @@ function khoiTao() {
     // get data từ localstorage
     list_products = getListProducts() || list_products;
     adminInfo = getListAdmin() || adminInfo;
-    
+
     setupEventTaiKhoan();
     capNhat_ThongTin_CurrentUser();
     addEventCloseAlertButton();
